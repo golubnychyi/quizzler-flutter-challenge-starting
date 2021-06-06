@@ -45,7 +45,7 @@ class QuizBrain {
     return _questionBank[_questionNumber].questionAnswer;
   }
 
-  bool isFinished() => _questionNumber >= _questionBank.length;
+  bool isFinished() => _questionNumber >= _questionBank.length-1;
 
   void printIsFinished() => print("Is finished = ${isFinished()}");
 

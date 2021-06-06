@@ -41,10 +41,6 @@ class _QuizPageState extends State<QuizPage> {
         quizBrain.resetQuiz();
         scoreKeeper.clear();
       }else{
-
-      }
-
-      //TODO: Step 5 - If we've not reached the end, ELSE do the answer checking steps below 👇
       if (userPickedAnswer == correctAnswer) {
         scoreKeeper.add(Icon(
           Icons.check,
@@ -57,6 +53,7 @@ class _QuizPageState extends State<QuizPage> {
         ));
       }
       quizBrain.nextQuestion();
+      }
     });
   }
 
