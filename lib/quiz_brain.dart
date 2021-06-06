@@ -49,6 +49,6 @@ class QuizBrain {
 
   void printIsFinished() => print("Is finished = ${isFinished()}");
 
-//TODO: Step 4 Part B - Create a reset() method here that sets the questionNumber back to 0.
+  void resetQuiz() => _questionNumber = 0;
 
 }
